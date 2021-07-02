@@ -1,0 +1,53 @@
+1)-   git config --global user.name "name"
+2)-   git config --global user.email "email@gmail.com"
+3)-   git config --list
+4)-   git config user.name
+5)-   git config user.email
+6)-   git status
+7)-   git init
+8)-   git add --a or git add .
+9)-   git add (folder name)
+10)-  git commit -m "commit name"
+11)-  git commit -a -m "commit name"
+12)-  git clone (git hub project link)
+13)-  touch .gitignore 
+14)-  git rm --cached filename
+15)-  git diff
+16)-  git diff --stanged
+17)-  git log
+18)-  git log -p
+19)-  git log -p -3
+20)-  git log --stat
+21)-  git log --pretty=onelone
+22)-  git log --pretty=short
+23)-  git log --pretty=full
+24)-  git log --pretty=format:"%h -- %an"
+25)-  git log --since=2.days
+26)-  git commit --amend
+27)-  rm -rf .git
+28)-  pwd
+29)-  ls
+30)-  q
+31)-  touch filename
+32)-  git rm filename
+33)-  git mv filename filerename
+34)-  git restore --staged foldername
+35)-  git checkout -- filename
+36)-  git checkout -f
+37)-  git remote add origin githublink
+38)-  git remote
+39)-  git remote -v
+40)-  SSH key created
+41)-  git config --global alias.st status
+42)-  git config --global alias.ci commit
+43)-  git checkout -b branchname
+44)-  git branch
+45)-  git branch -v
+46)-  git merge branchname
+47)-  git branch --merged
+48)-  git branch --no-merged
+49)-  git branch -d branchname(already merged)
+50)-  git branch -D branchname(no-merge)
+51)-  git push origin master
+52)-  git push origin branchname
+53)-  git push -d origin branchname

@@ -1,0 +1,177 @@
+LINUS TORVALDS creator of the git in 2005 which is creat also linus
+=>git config --global user.name "name"
+=>git config --global user.email "email@gmail.com"
+---------these command to create a accunt in the git hub---------
+
+=> git config --list
+=> git config user.name
+=> git config user.email
+--------this command to use the list of the configration which we add the name or email----------
+
+=>git status
+-------git status command to check the repository-----
+
+=>git init
+-------git init command to intialize the repository and to new folder------
+
+=>git add --a or git add .
+------(git add --a or git add .) command use to all folders and files-----
+
+=>git add (folder name)
+------(git add (folder name)) command to use one file or one folder to add the git repository------
+
+=>git commit -m "commit name"
+-----------git commit command is use to project name which we wish to project release name or other changes which we detect that what is achully change
+
+=>git commit -a -m "commit name"
+----------this command is use when we wish git basically unmodified files ignore at this time and add all the files and folders which is modified
+
+
+=>git clone (git hub project link)
+------(git clone (git hub project link)) to use download all the folders and files which exit the project
+
+=>touch .gitignore 
+ ------(touch .gitignore) command to use first of all one empty file is generated to the name of .gitignore
+and also which files or folders write in the .gitignore the files or folder ignore which we don't need to send git hub
+for example we don't need to save pics folder in git repositry so first of all we create a ".gitignore" folder and 
+then in this folder we add the files and folders which we don't use
+if we wish all files which * the file name end for example 4 files which the name is:
+1)cars.log
+2)bike.log
+3)cycle.log
+4)jeep.log
+if we wish all folders ignore then we use *.log------------
+
+=> git rm --cached filename
+--------this command is use when we wish to untrack the file which we also write filename in the gitignore 
+this is the reason to use the command 
+when we change the content of the file this is also show and tracked 
+to wish to don't tracked the file we use this command
+
+=>git diff
+-----------git diff command we use which differnce modified files and folders and unmodified files and folders--------
+
+=>git diff --stanged
+---------git diff --stanged command is used to chk all the stages
+
+=>git log
+--------git log command to chk out all the comments
+
+=>git log -p
+-------git log -p command used to seen all the changes of the commit
+
+=>git log -p -3
+------this comment use to the first 3 commits and changes. and in the place of 3 we can any number which we chk the commits
+
+=>git log --stat
+----->this commant use to chk the commits in short summry
+
+=>git log --pretty=onelone
+-----this is use to commit details in one line
+
+=>git log --pretty=short
+------>this tool is check to commits in very short way just tell about author, date, and commit
+
+=>git log --pretty=full
+-------this is use when we want the some extra details
+
+=>git log --pretty=format:"%h -- %an"
+-------this is use when we need to details of all the repositry
+%h shows the ommits and %an shows the autor name
+
+=>git log --since=2.days
+------>when we filter out the commits then we use this command
+
+=>git commit --amend
+-----this is use to add or change the commit of the previous commit
+then we use i and then ESC then :wq
+
+=> rm -rf .git
+-------rm -rf .git command is to use the remove git project of this directory
+
+=>pwd
+------pwd command is use to know about who is the current directory
+
+=>ls
+-----ls command is use to know about who files and folders exit in the current directory
+
+=>q
+----q command use when the program is running and we want to exit it
+
+=>touch filename
+-----this command is generate a empty file in the current project
+
+=>git rm filename 
+------git rm is to use remove the file or folder using git command and also this is the going to modified stage
+
+=>git mv filename filerename
+------git mv command to rename a file or folder using git command and also this is the goning to modified stage
+
+=>git restore --staged filename
+-----this command is used when we want to unstange the folder
+
+=>git checkout -- filename
+-----this command used when we unfortunatly delete the file data but we retore the data by using this command but before commit
+
+=>git checkout -f
+-----this command is used when we need to go back a last commit and all changes unmodified to untracked this is use before commit
+
+=>git remote add origin githublink
+----->this is using when we create a remote 
+in this case remote means a repositry or a project
+add means that add the repositry with the name of origin
+and orign is a name of link or repositry name its name may changes according to your chooice
+
+=>git remote 
+-----git remote command check that what name or how many repositry save in this project
+
+=>git remote -v
+-----git remote -v command use how many commands awailable about remote
+
+=>SSH key created
+first of all you go to one website
+name : ssh key github
+link : https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+than first of all copy this link ssh-keygen -t ed25519 -C "your_email@example.com" and past the git bash
+than enter enter enter enter enter
+than copy this link "$(ssh-agent -s)" and paste the git bash for private repositry
+than copy this link if code is changed ' ssh-add ~/.ssh/id_ed25519 '
+than go to github new ssh key generated 
+than use this command " tail ~/.ssh/id_ed25519.pub "
+one key is generated and this is copied
+than go to github account and go to setting than SSH and GPG key
+than first of all key name and than key paste at this place 
+=> git command alis
+------this is use to shortcut by own hand and own chooice
+for example we want to creat a short cut of status by the name of st than we create a alis
+for example=======>git config --global alias.st status
+for example=======>git config --global alias.ci commit
+for example=======>git config --global alias.unstang 'retore --stanged --'
+for example=======>git config --global alias.last 'log -p -1'
+=>git checkout -b branchname
+-----this command is used to creat a branch
+this branch is totally work separatly as master branch
+to swiching the master branch we run git checkout master
+we creat many banches as we need
+=>git branch 
+------to check how many branches exit it and who branch is run at this time as the green color
+=>git merge branchname
+------this commant use to merge the subbranch to master branch
+=>git branch -v
+-----this command is also seen the branches with commits
+=>git branch --merged
+-----this command is used to seen just who already merged the beched
+->git branch --no-merged
+----this command is used to seen who is not merged the branches
+=>git branch -d branchname
+----this command is use to delete the branch but 
+if branch is merged then this is use otherwise through error
+if we want to delete un-merged branches then we use this command
+=>git branch -D branchname
+-------this command use who branch is no-merged yet but we want to delete the branch
+=>git push orign master
+-------to pushing the code to github
+=>git push orign branchname
+-------if we want to push other branch then we use this command and this is also the sub branch
+=>git push -d origin branchname
+------if we want to delete the branch on the git hub then we run command
